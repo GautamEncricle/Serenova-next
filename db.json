@@ -499,5 +499,246 @@
                 "label": "People"
             }
         ]
+    },
+    "filterData": [
+        {
+            "link": "/",
+            "img": "/assets/images/acc-filter-img-1.webp",
+            "title": "Palm Cove Villa",
+            "tags": [
+                "Sea View",
+                "Private Pool",
+                "2 Guests"
+            ],
+            "description": "Lose yourself in the rhythmic sound of waves just steps away from your door. The Palm Cove Villa is a serene retreat designed for intimacy and indulgence. Featuring a sun-kissed private pool, airy interiors.",
+            "category": "Ocean Villas"
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/acc-filter-img-2.webp",
+            "title": "Lagoon Edge Pavilion",
+            "tags": [
+                "Lagoon Access",
+                "Outdoor Deck",
+                "3 Guests"
+            ],
+            "description": "Cradled at the edge of our tranquil lagoon, this pavilion offers direct water access and uninterrupted views of lush mangroves and crystal waters. Drift off on your outdoor daybed, soak in your starlit freestanding tub.",
+            "category": [
+                "Ocean Villas",
+                "Jungle Retreats"
+            ]
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/acc-filter-img-3.webp",
+            "title": "Sunset Ridge Suite",
+            "tags": [
+                "Panoramic View",
+                "Wine Cellar",
+                "4 Guests"
+            ],
+            "description": "Rising high above the coastline, Sunset Ridge Suite offers the most mesmerizing views of Serenova. This elegantly designed suite is ideal for those who want to indulge — featuring a curated wine cellar, an indoor-outdoor entertainment lounge.",
+            "category": "Jungle Retreats"
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/acc-filter-img-4.webp",
+            "title": "Jungle Hideaway",
+            "tags": [
+                "Rainforest Balcony",
+                "Hammock Lounge",
+                "2 Guests"
+            ],
+            "description": "Surrounded by lush rainforest and birdsong, the Jungle Hideaway is your portal to solitude and restoration. Built with raw textures and eco-conscious materials, it features a suspended hammock lounge, rainfall shower.",
+            "category": "Jungle Retreats"
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/acc-filter-img-5.webp",
+            "title": "Sky Loft Residence",
+            "tags": [
+                "Ocean + Sky Views",
+                "Upper Level",
+                "4 Guests"
+            ],
+            "description": "Perched on the highest elevation of the resort, the Sky Loft Residence is a contemporary masterpiece that blends openness, light, and design. With expansive living space, a panoramic sky-view lounge, and a floating glass balcony.",
+            "category": [
+                "Cliff Residences",
+                "Ocean Villas"
+            ]
+        }
+    ],
+    "exploreData": {
+        "title": "More to Explore at Serenova",
+        "cards": [
+            {
+                "link": "/offer-and-packages",
+                "img": {
+                    "src": "/assets/images/acc-explore-1.webp",
+                    "alt": "View Offers"
+                },
+                "title": "View Offers",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            },
+            {
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/acc-explore-2.webp",
+                    "alt": "Itineraries"
+                },
+                "title": "Itineraries",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            }
+        ]
+    },
+    "offerExplore": {
+        "title": "More to Explore at Serenova",
+        "cards": [
+            {
+                "link": "/offer-and-packages",
+                "img": {
+                    "src": "/assets/images/offer-explore-1.webp",
+                    "alt": "View Offers"
+                },
+                "title": "View Offers",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            },
+            {
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/offer-explore-2.webp",
+                    "alt": "Itineraries"
+                },
+                "title": "Itineraries",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            }
+        ]
+    },
+    "offerPackages": {
+        "subtitle": "Pakages",
+        "title": "Our Curated Stay Packages",
+        "text": "At Serenova, we believe every guest deserves more than just a stay — they deserve an experience. Our thoughtfully designed packages combine the best of beachfront bliss, fine dining, adventure.",
+        "packs": [
+            {
+                "id": 1,
+                "link": "/",
+                "name": "Silver pack",
+                "price": "$55.00",
+                "time": "Per month",
+                "advantages": [
+                    {
+                        "li": "Complimentary welcome drink"
+                    },
+                    {
+                        "li": "10% off on spa treatments"
+                    },
+                    {
+                        "li": "Free access to fitness center"
+                    },
+                    {
+                        "li": "High-speed Wi-Fi"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "link": "/",
+                "name": "Gold pack",
+                "price": "$175.00",
+                "time": "Per month",
+                "advantages": [
+                    {
+                        "li": "Ocean-view room upgrade"
+                    },
+                    {
+                        "li": "1 complimentary spa session"
+                    },
+                    {
+                        "li": "Access to private beach lounges"
+                    },
+                    {
+                        "li": "Gourmet breakfast & dinner"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "link": "/",
+                "name": "Platinum pack",
+                "price": "$395.00",
+                "time": "Per month",
+                "advantages": [
+                    {
+                        "li": "Private villa stay"
+                    },
+                    {
+                        "li": "24/7 concierge service"
+                    },
+                    {
+                        "li": "Unlimited spa access"
+                    },
+                    {
+                        "li": "Private beach dinner experience"
+                    }
+                ]
+            }
+        ]
+    },
+    "offerFilter": [
+        {
+            "link": "/",
+            "img": "/assets/images/offer-filter-img-1.webp",
+            "title": "Tropical Escape",
+            "tags": [
+                "Valid until: 01 Feb 2026",
+                "3 Nights for the Price of 2"
+            ],
+            "description": "Unwind in coastal luxury — book two nights and enjoy a third night on us. Wake up to the sound of waves and bask in the serenity of Serenova."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/offer-filter-img-2.webp",
+            "title": "Sunset Safari Stay",
+            "tags": [
+                "Valid until: 03 Feb 2026",
+                "2 Night 1 day"
+            ],
+            "description": "Pair your coastal getaway with an unforgettable guided nature tour. Includes early morning breakfast and evening beach bonfire."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/offer-filter-img-3.webp",
+            "title": "Wellness Retreat",
+            "tags": [
+                "Valid until: 10 Feb 2026",
+                "3 Nights for the Price of 2"
+            ],
+            "description": "Immerse in rejuvenation with daily yoga, guided meditation, and a complimentary 60-minute massage during your stay."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/offer-filter-img-4.webp",
+            "title": "Romantic Getaway",
+            "tags": [
+                "Valid until: 10 Feb 2026",
+                "5 Nights for the Price of 2"
+            ],
+            "description": "Surprise your partner with a romantic escape. Includes rose petal room setup, private beach dinner, and spa for two."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/offer-filter-img-5.webp",
+            "title": "Family Fun Package",
+            "tags": [
+                "Valid until: 25 Feb 2026",
+                "10 Nights for the Price of 3"
+            ],
+            "description": "Explore, play, and bond. Includes a family suite, kid-friendly activities, and a sunset cruise for the whole family."
+        }
+    ],
+    "offerAbout": {
+        "subtitle": "Escape. Indulge. Save.",
+        "title": "Discover exclusive offers and packages <br /> designed to elevate your <span>Serenova experience.</span> <br /> Whether it’s a <span>romantic escape,</span>",
+        "text": "We believe that true luxury lies in the details a complimentary spa ritual, a sunset dinner by the ocean, or simply more time to breathe. Explore our seasonal offers and handpicked experiences that bring together value and indulgence in perfect harmony.  At Serenova, every stay is more than a vacation — it's a tailored journey into luxury, serenity, and unforgettable moments. Our exclusive offers and thoughtfully bundled packages are designed to enhance your time with us, whether you're seeking romance, relaxation, adventure, or quality family time. From sun-kissed coastal retreats to wellness-infused escapes, each package reflects our commitment to elevated hospitality and timeless comfort."
     }
 }
