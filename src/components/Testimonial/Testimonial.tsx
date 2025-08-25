@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import "swiper/css";
 import "swiper/css/navigation";
 import TestimonialCard from "../testimonialCard/testimonialCard";
 import { Testimonials as TestimonialsType } from "../../types/homeTypes";
@@ -15,6 +16,9 @@ interface TestimonialProps {
 const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
   const { subtitle, title, testimonials } = data;
 
+  console.log("Testimonial component rendered with data:", data);
+  console.log("Testimonials array:", testimonials);
+
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [swiperReady, setSwiperReady] = useState(false);
@@ -22,6 +26,17 @@ const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
   useEffect(() => {
     setSwiperReady(true);
   }, []);
+
+  useEffect(() => {
+    if (swiperReady && prevRef.current && nextRef.current) {
+      // Reinitialize navigation when refs are available
+      const swiper = document.querySelector(".test-swiper") as any;
+      if (swiper && swiper.swiper) {
+        swiper.swiper.navigation.init();
+        swiper.swiper.navigation.update();
+      }
+    }
+  }, [swiperReady]);
 
   return (
     <section className="test-main relative py-60 min-1400:py-[147px]">
@@ -49,24 +64,16 @@ const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
               slidesPerView={1.1}
               centeredSlides={true}
               loop={true}
-              navigation={
-                swiperReady
-                  ? {
-                      prevEl: prevRef.current,
-                      nextEl: nextRef.current,
-                    }
-                  : false
-              }
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
               onSwiper={(swiper) => {
-                if (
-                  swiper.params.navigation &&
-                  typeof swiper.params.navigation === "object"
-                ) {
-                  swiper.params.navigation.prevEl = prevRef.current;
-                  swiper.params.navigation.nextEl = nextRef.current;
-                }
-                swiper.navigation.init();
-                swiper.navigation.update();
+                // Initialize navigation after swiper is ready
+                setTimeout(() => {
+                  swiper.navigation.init();
+                  swiper.navigation.update();
+                }, 100);
               }}
               breakpoints={{
                 576: {

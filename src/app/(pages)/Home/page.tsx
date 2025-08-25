@@ -12,58 +12,92 @@ import Lifestyle from "@/components/Lifestyle/Lifestyle";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Journal from "@/components/Journal/Journal";
 import axiosClient from "@/lib/axiosClient";
-import { HomeData } from "@/types/homeTypes";
 
 const HomePage = () => {
-  const [homeData, setHomeData] = useState<HomeData | null>(null);
+  const [banner, setBanner] = useState(null);
+  const [services, setServices] = useState(null);
+  const [about, setAbout] = useState(null);
+  const [best, setBest] = useState(null);
+  const [companies, setCompanies] = useState(null);
+  const [tours, setTours] = useState(null);
+  const [offer, setOffer] = useState(null);
+  const [lifestyle, setLifestyle] = useState(null);
+  const [testimonials, setTestimonials] = useState(null);
+  const [journal, setJournal] = useState(null);
+
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchHomeData = async () => {
+    const fetchAllData = async () => {
       try {
         setLoading(true);
-        const response = await axiosClient.get<HomeData>("/home");
-        setHomeData(response.data);
+
+        const [
+          bannerRes,
+          servicesRes,
+          aboutRes,
+          bestRes,
+          companiesRes,
+          toursRes,
+          offerRes,
+          lifestyleRes,
+          testimonialsRes,
+          journalRes,
+        ] = await Promise.all([
+          axiosClient.get("/banner"),
+          axiosClient.get("/services"),
+          axiosClient.get("/about"),
+          axiosClient.get("/best"),
+          axiosClient.get("/companies"),
+          axiosClient.get("/tours"),
+          axiosClient.get("/offer"),
+          axiosClient.get("/lifestyle"),
+          axiosClient.get("/testimonials"),
+          axiosClient.get("/journal"),
+        ]);
+
+        setBanner(bannerRes.data);
+        setServices(servicesRes.data);
+        setAbout(aboutRes.data);
+        setBest(bestRes.data);
+        setCompanies(companiesRes.data);
+        setTours(toursRes.data);
+        setOffer(offerRes.data);
+        setLifestyle(lifestyleRes.data);
+        setTestimonials(testimonialsRes.data);
+        setJournal(journalRes.data);
       } catch (err) {
-        setError("Failed to fetch home data");
-        console.error("Error fetching home data:", err);
+        console.error("Error fetching data:", err);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchHomeData();
+    fetchAllData();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
-  if (!homeData) {
-    return <div>No data available</div>;
-  }
+  if (loading) return <div>Loading...</div>;
 
   return (
     <>
-      <Banner data={homeData.banner} />
-      <Services data={homeData.services} />
-      <About
-        data={homeData.about}
-        suntitletreeleft={"after:!left-[19px]"}
-        bgColor={"bg-dark-cream"}
-      />
-      <Best data={homeData.best} />
-      <Companies data={homeData.companies} />
-      <Tours data={homeData.tours} showTree={false} />
-      <Offer data={homeData.offer} />
-      <Lifestyle data={homeData.lifestyle} />
-      <Testimonial data={homeData.testimonials} />
-      <Journal data={homeData.journal} bgColor="bg-light" treeDisplay="block" />
+      {banner && <Banner data={banner} />}
+      {services && <Services data={services} />}
+      {about && (
+        <About
+          data={about}
+          suntitletreeleft="after:!left-[19px]"
+          bgColor="bg-dark-cream"
+        />
+      )}
+      {best && <Best data={best} />}
+      {companies && <Companies data={companies} />}
+      {tours && <Tours data={tours} showTree={false} />}
+      {offer && <Offer data={offer} />}
+      {lifestyle && <Lifestyle data={lifestyle} />}
+      {testimonials && <Testimonial data={testimonials} />}
+      {journal && (
+        <Journal data={journal} bgColor="bg-light" treeDisplay="block" />
+      )}
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import JournalCard from "../journalCard/journalCard";
+
 const leaf = "/assets/images/journal-leaf.png";
 const tree = "/assets/images/journal-tree.png";
 
@@ -31,7 +32,7 @@ const Journal = ({
         className={`journal-tree ${treeDisplay} absolute bottom-0 min-1400:bottom-52 right-0`}>
         <Image
           src={tree}
-          alt="leaf"
+          alt="tree"
           width={229}
           height={263}
           className="w-[80px] min-576:w-[120px] min-1400:w-auto"
