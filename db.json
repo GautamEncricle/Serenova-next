@@ -740,5 +740,407 @@
         "subtitle": "Escape. Indulge. Save.",
         "title": "Discover exclusive offers and packages <br /> designed to elevate your <span>Serenova experience.</span> <br /> Whether it’s a <span>romantic escape,</span>",
         "text": "We believe that true luxury lies in the details a complimentary spa ritual, a sunset dinner by the ocean, or simply more time to breathe. Explore our seasonal offers and handpicked experiences that bring together value and indulgence in perfect harmony.  At Serenova, every stay is more than a vacation — it's a tailored journey into luxury, serenity, and unforgettable moments. Our exclusive offers and thoughtfully bundled packages are designed to enhance your time with us, whether you're seeking romance, relaxation, adventure, or quality family time. From sun-kissed coastal retreats to wellness-infused escapes, each package reflects our commitment to elevated hospitality and timeless comfort."
+    },
+    "spaAbout": {
+        "subtitle": "Wellness & Spa at Serenova",
+        "title": "our spa and wellness rituals are more than <br /> <span>treatments</span> they are soulful journeys curated to <br /> awaken your senses and restore <span>inner balance.</span>",
+        "text": "From time-honored therapies to modern-day rejuvenation techniques, Serenova’s spa menu reflects a deep commitment to holistic healing and gentle luxury. Let the ocean breeze guide your breath, and the tranquility of our coastal surroundings bring you back to yourself. Whether you're unwinding in our aromatic steam rooms, practicing sunrise yoga by the ocean, or indulging in a sea mineral massage, every experience is designed to renew your body and quiet your mind. Step into a sanctuary of stillness where nature’s rhythms meet the healing touch of expert hands."
+    },
+    "spaTraveler": {
+        "subtitle": "Wellness Hours",
+        "title": "Indulge in the Art of Renewal by the Sea",
+        "note": "*Simply let us know at least 30 minutes ahead, and we’ll gladly prepare the sauna and steam bath for your preferred time.",
+        "travels": [
+            {
+                "link": "",
+                "icon": {
+                    "src": "/assets/images/spa-wellness-icon-1.png",
+                    "alt": "Holistic Spa Therapies"
+                },
+                "title": "Holistic Spa Therapies",
+                "tag": "Daily | 10:00 AM – 9:00 PM",
+                "text": ""
+            },
+            {
+                "link": "",
+                "icon": {
+                    "src": "/assets/images/spa-wellness-icon-2.png",
+                    "alt": "Oceanfront Infinity Pool"
+                },
+                "title": "Oceanfront Infinity Pool",
+                "tag": "Daily | 7:00 AM – 8:00 PM",
+                "text": ""
+            },
+            {
+                "link": "",
+                "icon": {
+                    "src": "/assets/images/traveler-icon-3.png",
+                    "alt": "Botanical Steam & Salt Sauna"
+                },
+                "title": "Botanical Steam & Salt Sauna",
+                "tag": "Daily | 9:00 AM – 10:00 PM",
+                "text": ""
+            }
+        ]
+    },
+    "spaRituals": {
+        "subtitle": "Our Spa Rituals",
+        "title": "Where Luxury Meets Deep Relaxation",
+        "slides": [
+            {
+                "id": 1,
+                "img": "/assets/images/rituals-img-2.webp",
+                "title": "Signature Serenity Massage",
+                "text": "<p>Our most popular treatment combines rhythmic strokes and warm aromatherapy oils to promote full-body relaxation.</p><p>Duration: 60 / 90 minutes</p>"
+            },
+            {
+                "id": 2,
+                "img": "/assets/images/rituals-img-3.webp",
+                "title": "Deep Tissue Revival",
+                "text": "<p>Targets chronic muscle tension with firm pressure and slow strokes, ideal for relieving stiffness and soreness.</p><p>Duration: 60 / 90 minutes</p>"
+            },
+            {
+                "id": 3,
+                "img": "/assets/images/rituals-img-4.webp",
+                "title": "Hot Stone Harmony",
+                "text": "<p>Warm, smooth stones are placed on key points to melt away tension and improve blood circulation for deep relaxation.</p><p>Duration: 75 / 90 minutes</p>"
+            },
+            {
+                "id": 4,
+                "img": "/assets/images/rituals-img-5.webp",
+                "title": "Reflexology Rebalance",
+                "text": "<p>Focuses on pressure points in the feet, hands, and ears to restore energy flow and promote holistic body balance.</p><p>Duration: 45 / 60 minutes</p>"
+            },
+            {
+                "id": 5,
+                "img": "/assets/images/rituals-img-1.webp",
+                "title": "Aromatherapy Bliss",
+                "text": "<p>Combines gentle massage techniques with essential oils to uplift mood, reduce stress, and enhance overall well-being.</p><p>Duration: 60 minutes</p>"
+            }
+        ]
+    },
+    "spaIndulge": {
+        "subtitle": "Indulge in the Art of Relaxation",
+        "title": "Where Wellness Becomes a Way of Life",
+        "images": [
+            {
+                "src": "/assets/images/spa-indulge-img-1.webp",
+                "alt": "image1"
+            },
+            {
+                "src": "/assets/images/spa-indulge-img-2.webp",
+                "alt": "image2"
+            },
+            {
+                "src": "/assets/images/spa-indulge-img-3.webp",
+                "alt": "image3"
+            },
+            {
+                "src": "/assets/images/spa-indulge-img-4.webp",
+                "alt": "image4"
+            },
+            {
+                "src": "/assets/images/spa-indulge-img-5.webp",
+                "alt": "image5"
+            },
+            {
+                "src": "/assets/images/spa-indulge-img-6.webp",
+                "alt": "image6"
+            },
+            {
+                "src": "/assets/images/rituals-img-1.webp",
+                "alt": "image7"
+            },
+            {
+                "src": "/assets/images/rituals-img-4.webp",
+                "alt": "image8"
+            }
+        ]
+    },
+    "spaExplore": {
+        "title": "More to Explore at Serenova",
+        "cards": [
+            {
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/spa-exlpore-1.webp",
+                    "alt": "View Offers"
+                },
+                "title": "View Offers",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            },
+            {
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/spa-exlpore-2.webp",
+                    "alt": "Itineraries"
+                },
+                "title": "Itineraries",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            }
+        ]
+    },
+    "eventsAbout": {
+        "subtitle": "Unforgettable Moments",
+        "title": "Celebrate Life’s Most Cherished Events <span>at <br /> Serenova</span> we believe <span>every celebration</span> <br /> deserves more than just a venue",
+        "text": "At Serenova, we understand that the most meaningful events in life deserve more than just a beautiful setting — they deserve careful intention, thoughtful design, and the magic of a place that inspires awe. That’s why we’ve curated a destination where celebrations aren’t just hosted — they’re lived, felt, and remembered forever. From barefoot beach weddings bathed in golden light to sophisticated corporate retreats designed for clarity and connection, Serenova offers a seamless blend of natural beauty and world-class service. Imagine exchanging vows as waves kiss the shore, hosting a sunset cocktail party on a floating deck, or gathering your closest friends for an intimate candlelit dinner under a sky full of stars. Our team of dedicated event planners and hospitality experts handle every detail."
+    },
+    "eventsFilter": [
+        {
+            "link": "/",
+            "img": "/assets/images/explore-filter-1.webp",
+            "title": "Tropical Beach Wedding",
+            "tags": [
+                "Oceanview Garden",
+                "Valid until Dec 2025",
+                "Up to 150 Guests"
+            ],
+            "description": "Say “I do” under the golden sun with the gentle ocean breeze. Our beach wedding package includes full planning, décor, a sunset ceremony, and luxury dining for guests."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/explore-filter-2.webp",
+            "title": "Corporate Island Retreat",
+            "tags": [
+                "Conference Lounge",
+                "Year-Round Availability",
+                "Up to 80 Guests"
+            ],
+            "description": "Host productive meetings in paradise. Includes accommodation bundles, tech-enabled spaces, team-building experiences, and wellness add-ons."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/explore-filter-3.webp",
+            "title": "Private Celebration Dinner",
+            "tags": [
+                "Sunset Deck",
+                "Valid until Nov 2025",
+                "Up to 40 Guests"
+            ],
+            "description": "Immerse in rejuvenation with daily yoga, guided meditation, and a complimentary 60-minute massage during your stay."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/explore-filter-4.webp",
+            "title": "Cultural Fest Evenings",
+            "tags": [
+                "Central Lawn",
+                "Seasonal Events",
+                "Open to All Guests"
+            ],
+            "description": "Experience vibrant local culture through music, dance, and cuisine. These community-style events add authentic flavor to your Serenova stay."
+        },
+        {
+            "link": "/",
+            "img": "/assets/images/explore-filter-5.webp",
+            "title": "Family Reunion Getaway",
+            "tags": [
+                "Entire Resort Area",
+                "Custom Dates Available",
+                "Flexible Group Size"
+            ],
+            "description": "Reconnect with loved ones in a luxurious setting. This package includes multi-room accommodations, guided activities, group dining, and dedicated hosts."
+        }
+    ],
+    "eventsExplore": {
+        "title": "More to Explore at Serenova",
+        "cards": [
+            {
+                "link": "/offer-and-packages",
+                "img": {
+                    "src": "/assets/images/events-explore-1.webp",
+                    "alt": "View Offers"
+                },
+                "title": "View Offers",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            },
+            {
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/events-explore-2.webp",
+                    "alt": "Itineraries"
+                },
+                "title": "Itineraries",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            }
+        ]
+    },
+    "facilitiesAbout": {
+        "subtitle": "Explore World-Class Facilities",
+        "title": "Curated Spaces for <span>Inspired Living</span> Facilities <br /> Modern Comforts & Timeless Hospitality That <br /> Reflect <span>the Spirit of Serenova</span>",
+        "text": "At Serenova, each facility is a crafted space of purpose — whether it’s for relaxation, activity, rejuvenation, or togetherness. Explore thoughtfully curated spaces built to enhance your stay, all designed with a blend of elegance, modernity, and serenity. Every corner of Serenova is thoughtfully designed to enhance your comfort, leisure, and well-being, with world-class amenities that blend elegance and functionality. From tranquil wellness areas to vibrant activity zones, our offerings ensure your stay is as relaxing or adventurous as you desire. Our handpicked amenities are designed to nurture connection, relaxation, and joy in every moment of your stay."
+    },
+    "facilitiesTours": {
+        "subtitle": "Our Facilities",
+        "title": "Where Every Detail Enhances Your Escape",
+        "tours": [
+            {
+                "id": 1,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/facilities-facility-1.webp",
+                    "alt": "Beachside Yoga & Mindfulness"
+                },
+                "title": "Beachside Yoga & Mindfulness",
+                "subtitle": "Wellness Activity",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "1 Hour (Sunrise or Sunset Session)"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Yoga mat, herbal tea, towel"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Certified yoga instructor"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/facilities-facility-2.webp",
+                    "alt": "Tropical Mixology Workshop"
+                },
+                "title": "Tropical Mixology Workshop",
+                "subtitle": "Interactive Class",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "90 Minutes"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Fresh ingredients, tasting flight"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Resort mixologist"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/facilities-facility-3.webp",
+                    "alt": "Floating Breakfast Experience"
+                },
+                "title": "Floating Breakfast Experience",
+                "subtitle": "Luxury Dining",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "Flexible (Morning Hours)"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Gourmet breakfast tray, coffee"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Butler service"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/facilities-facility-4.webp",
+                    "alt": "Artisanal Craft Workshop"
+                },
+                "title": "Artisanal Craft Workshop",
+                "subtitle": "Cultural Activity",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "2–3 Hours"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Tools, materials"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Local artisan"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/facilities-facility-5.webp",
+                    "alt": "Lagoon Paddleboarding"
+                },
+                "title": "Lagoon Paddleboarding",
+                "subtitle": "Water Activity",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "1.5 Hours"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Safety vest, Bottled water"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Watersport coordinator"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/facilities-facility-6.webp",
+                    "alt": "Open-Air Cinema Night"
+                },
+                "title": "Open-Air Cinema Night",
+                "subtitle": "Leisure Experience",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "Evening (2–3 Hours)"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Popcorn, loungers"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Staff-hosted movie setup"
+                    }
+                ]
+            }
+        ]
+    },
+    "facilitiesExplore": {
+        "title": "More to Explore at Serenova",
+        "cards": [
+            {
+                "link": "/offer-and-packages",
+                "img": {
+                    "src": "/assets/images/facilities-explore-1.webp",
+                    "alt": "View Offers"
+                },
+                "title": "View Offers",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            },
+            {
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/facilities-explore-2.webp",
+                    "alt": "Itineraries"
+                },
+                "title": "Itineraries",
+                "text": "Exclusive seasonal deals, honeymoon packages, and early-bird specials crafted for unforgettable stays."
+            }
+        ]
     }
 }
