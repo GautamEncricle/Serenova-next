@@ -1,7 +1,8 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import TestimonialCard from "../testimonialCard/testimonialCard";
@@ -23,20 +24,25 @@ const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
   const nextRef = useRef(null);
   const [swiperReady, setSwiperReady] = useState(false);
 
-  useEffect(() => {
+  const handleSwiperInit = (swiper: SwiperType) => {
     setSwiperReady(true);
-  }, []);
-
-  useEffect(() => {
-    if (swiperReady && prevRef.current && nextRef.current) {
-      // Reinitialize navigation when refs are available
-      const swiper = document.querySelector(".test-swiper") as any;
-      if (swiper && swiper.swiper) {
-        swiper.swiper.navigation.init();
-        swiper.swiper.navigation.update();
+    
+    // Update navigation with the correct elements
+    if (
+      swiper.params.navigation &&
+      typeof swiper.params.navigation === "object"
+    ) {
+      const navOptions = swiper.params.navigation as any;
+      navOptions.prevEl = prevRef.current;
+      navOptions.nextEl = nextRef.current;
+      
+      // Only initialize and update if navigation is available
+      if (swiper.navigation) {
+        swiper.navigation.init();
+        swiper.navigation.update();
       }
     }
-  }, [swiperReady]);
+  };
 
   return (
     <section className="test-main relative py-60 min-1400:py-[147px]">
@@ -57,66 +63,58 @@ const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
           <h2 className="h4">{title}</h2>
         </div>
         <div className="test-swiper-start mt-40 min-1400:mt-[67px]">
-          {swiperReady && (
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={20}
-              slidesPerView={1.1}
-              centeredSlides={true}
-              loop={true}
-              navigation={{
-                prevEl: prevRef.current,
-                nextEl: nextRef.current,
-              }}
-              onSwiper={(swiper) => {
-                // Initialize navigation after swiper is ready
-                setTimeout(() => {
-                  swiper.navigation.init();
-                  swiper.navigation.update();
-                }, 100);
-              }}
-              breakpoints={{
-                576: {
-                  slidesPerView: 1.6,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 1.9,
-                  spaceBetween: 30,
-                },
-                990: {
-                  slidesPerView: 1.9,
-                  spaceBetween: 40,
-                },
-                1200: {
-                  slidesPerView: 2.4,
-                  spaceBetween: 40,
-                },
-                1400: {
-                  slidesPerView: 2.8,
-                  spaceBetween: 40,
-                },
-                1600: {
-                  slidesPerView: 3.8,
-                  spaceBetween: 40,
-                },
-                1800: {
-                  slidesPerView: 4.05,
-                  spaceBetween: 40,
-                },
-              }}
-              className="test-swiper">
-              {[...Array(3)]
-                .flatMap(() => testimonials)
-                .map((testimonial, index) => (
-                  <SwiperSlide
-                    key={`${testimonial.id}-${index}`}
-                    className="!h-auto">
-                    <TestimonialCard {...testimonial} />
-                  </SwiperSlide>
-                ))}
-            </Swiper>
-          )}
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={20}
+            slidesPerView={1.1}
+            centeredSlides={true}
+            loop={true}
+            navigation={{
+              prevEl: prevRef.current,
+              nextEl: nextRef.current,
+            }}
+            onInit={handleSwiperInit}
+            breakpoints={{
+              576: {
+                slidesPerView: 1.6,
+                spaceBetween: 30,
+              },
+              768: {
+                slidesPerView: 1.9,
+                spaceBetween: 30,
+              },
+              990: {
+                slidesPerView: 1.9,
+                spaceBetween: 40,
+              },
+              1200: {
+                slidesPerView: 2.4,
+                spaceBetween: 40,
+              },
+              1400: {
+                slidesPerView: 2.8,
+                spaceBetween: 40,
+              },
+              1600: {
+                slidesPerView: 3.8,
+                spaceBetween: 40,
+              },
+              1800: {
+                slidesPerView: 4.05,
+                spaceBetween: 40,
+              },
+            }}
+            className="test-swiper">
+            {[...Array(3)]
+              .flatMap(() => testimonials)
+              .map((testimonial, index) => (
+                <SwiperSlide
+                  key={`${testimonial.id}-${index}`}
+                  className="!h-auto">
+                  <TestimonialCard {...testimonial} />
+                </SwiperSlide>
+              ))}
+          </Swiper>
           <div className="swiper-nav mt-40 min-1400:mt-[67px]">
             <button
               ref={prevRef}
