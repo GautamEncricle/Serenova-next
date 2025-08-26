@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Swiper as SwiperType } from "swiper";
 import RitualCard from "../ritualCard/ritualCard";
-import Image from "next/image";
 const leaf = "/assets/images/ritual-leaf.png";
 
 import "swiper/css/navigation";
@@ -54,7 +53,7 @@ const Rituals = ({ data }: RitualsProps) => {
   return (
     <section className="rituals-main relative bg-dark-cream py-60 min-1400:py-[92px] overflow-hidden">
       <div className="rituals-leaf absolute left-0 top-0">
-        <Image
+        <img
           src={leaf}
           alt="leaf"
           width={249}

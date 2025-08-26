@@ -17,16 +17,13 @@ interface TestimonialProps {
 const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
   const { subtitle, title, testimonials } = data;
 
-  console.log("Testimonial component rendered with data:", data);
-  console.log("Testimonials array:", testimonials);
-
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [swiperReady, setSwiperReady] = useState(false);
 
   const handleSwiperInit = (swiper: SwiperType) => {
     setSwiperReady(true);
-    
+
     // Update navigation with the correct elements
     if (
       swiper.params.navigation &&
@@ -35,7 +32,7 @@ const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
       const navOptions = swiper.params.navigation as any;
       navOptions.prevEl = prevRef.current;
       navOptions.nextEl = nextRef.current;
-      
+
       // Only initialize and update if navigation is available
       if (swiper.navigation) {
         swiper.navigation.init();
@@ -47,7 +44,7 @@ const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
   return (
     <section className="test-main relative py-60 min-1400:py-[147px]">
       <div className={`test-big-leaf ${leafDisplay} absolute left-0 top-0`}>
-        <Image
+        <img
           src={bigleaf}
           alt="leaf"
           width={184}

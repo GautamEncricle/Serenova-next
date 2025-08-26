@@ -10,7 +10,7 @@ const WeDo = ({ data }: { data: WeDoData }) => {
   return (
     <section className="do-main relative py-60 min-1400:py-[87px]">
       <div className="do-leaf absolute left-0 bottom-0 min-1400:bottom-[-100px] max-990:hidden">
-        <Image
+        <img
           src={leaf}
           alt="leaf"
           width={281}

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 const leaf = "/assets/images/explore-leaf.png";
 import ExploreCard from "../exploreCard/Explore";
 
@@ -9,7 +8,7 @@ const Explore = ({ data }: { data: any }) => {
   return (
     <section className="explore-main relative py-60 min-1400:pb-0 min-1400:pt-[147px]">
       <div className="explore-leaf absolute bottom-10 left-0 max-990:hidden">
-        <Image
+        <img
           src={leaf}
           alt="leaf"
           width={324}

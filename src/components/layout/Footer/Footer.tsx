@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import axiosClient from "@/lib/axiosClient";
 import { FooterData } from "@/types/footerTypes";
 
@@ -28,13 +27,8 @@ const Footer = () => {
     fetchFooterData();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (!footerData) {
-    return <div>Error loading footer data</div>;
-  }
+  if (loading) return <div>Loading...</div>;
+  if (!footerData) return <div>Error loading footer data</div>;
 
   const {
     planeicon,
@@ -50,8 +44,9 @@ const Footer = () => {
 
   return (
     <footer className="footer relative bg-cream">
+      {/* Left leaf */}
       <div className="footer-leaf-left absolute top-[45px] left-0 z-0 max-640:hidden">
-        <Image
+        <img
           src={leftLeaf}
           alt="leaf"
           width={290}
@@ -59,8 +54,10 @@ const Footer = () => {
           className="w-[90px] min-990:w-[180px] min-1200:w-auto"
         />
       </div>
+
+      {/* Right leaf */}
       <div className="footer-leaf-right absolute top-[5px] right-0 z-0 max-640:hidden">
-        <Image
+        <img
           src={rightLeaf}
           alt="leaf"
           width={375}
@@ -68,6 +65,8 @@ const Footer = () => {
           className="w-[100px] min-990:w-[200px] min-1200:w-auto"
         />
       </div>
+
+      {/* Footer above */}
       <div className="footer-above py-40 min-1200:py-72">
         <div className="container-1313">
           <div className="footer-above-inside">
@@ -85,6 +84,8 @@ const Footer = () => {
                 <p className="poppins-300-30">{footerText}</p>
               </div>
             </div>
+
+            {/* Newsletter form */}
             <div className="footer-above-form">
               <div className="footer-form-input-box max-w-[631px] mx-auto flex justify-center">
                 <div className="footer-form-input flex-[0_0_calc(100%_-_143px)]">
@@ -131,6 +132,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer below */}
       <div className="footer-below">
         <div className="container-1313">
           <div className="footer-below-inside py-30 min-1200:py-40 border-t-[1px] border-solid border-[rgba(173,_157,_114,_0.5)]">

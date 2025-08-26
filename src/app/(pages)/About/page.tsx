@@ -53,11 +53,6 @@ const About = () => {
         setAboutTraveler(aboutTravelerRes.data);
         setAboutPlaces(aboutPlacesRes.data);
         setAboutVacation(aboutVacationRes.data);
-        console.log("Testimonials data:", testimonialsRes.data);
-        console.log(
-          "Testimonials structure:",
-          testimonialsRes.data.testimonials
-        );
         setTestimonials(testimonialsRes.data);
         setJournal(journalRes.data);
       } catch (err) {

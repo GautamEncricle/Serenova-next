@@ -97,7 +97,7 @@ const Banner = ({ data }: BannerProps) => {
           <div className="banner-below relative z-1 pt-[320px] min-576:pt-[210px] min-990:pt-[42px] min-1200:pt-[12px] min-1400:pt-[100px] min-1600:pt-[120px] min-1800:pt-[148px] pb-[160px] min-576:pb-[150px] min-990:pb-12">
             <div className="banner-detail">
               <div className="banner-detail-leaf mb-[13px]">
-                <Image
+                <img
                   src={detailLeaf}
                   alt="leaf"
                   width={400}

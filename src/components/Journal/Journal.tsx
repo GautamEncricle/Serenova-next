@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import JournalCard from "../journalCard/journalCard";
 
 const leaf = "/assets/images/journal-leaf.png";
@@ -20,7 +19,7 @@ const Journal = ({
     <section
       className={`journal-main ${bgColor} relative py-80 min-1400:pt-[147px] min-1400:pb-[204px]`}>
       <div className="journal-leaf absolute top-0 left-0">
-        <Image
+        <img
           src={leaf}
           alt="leaf"
           width={315}
@@ -30,7 +29,7 @@ const Journal = ({
       </div>
       <div
         className={`journal-tree ${treeDisplay} absolute bottom-0 min-1400:bottom-52 right-0`}>
-        <Image
+        <img
           src={tree}
           alt="tree"
           width={229}

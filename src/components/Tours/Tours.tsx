@@ -16,7 +16,7 @@ const Tours = ({
   return (
     <section className="tours-main relative bg-dark-cream py-60 min-1800:pt-[130px] min-1800:pb-[92px]">
       <div className="tour-leaf absolute bottom-0 left-0">
-        <Image
+        <img
           src={leaf}
           alt="leaf"
           width={207}
@@ -28,7 +28,7 @@ const Tours = ({
         className={`tour-tree absolute top-40 min-1600:top-[116px] right-0 max-990:hidden ${
           showTree ? "min-990:block" : "min-990:hidden"
         }`}>
-        <Image
+        <img
           src={tree}
           alt="tree"
           width={293}

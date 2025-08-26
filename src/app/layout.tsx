@@ -1,7 +1,31 @@
 import "./globals.css";
 import { Metadata } from "next";
+import { Open_Sans, Poppins, Teachers } from "next/font/google";
 import Header from "@/components/layout/Header/Header";
+import Marquee from "@/components/Marquee/Marquee";
 import Footer from "@/components/layout/Footer/Footer";
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-open-sans',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-poppins',
+});
+
+const teachers = Teachers({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800'],
+  style: ['normal', 'italic'],
+  variable: '--font-teachers',
+});
 
 export const metadata: Metadata = {
   title: "Serenova",
@@ -13,29 +37,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // In Next.js App Router, we can't directly access the pathname in layout.tsx
-  // We'll use a client component wrapper for the header to handle this
-  // For now, we'll set a default header type and let individual pages override it
-
   return (
-    <html lang="en">
+    <html lang="en" className={`${openSans.variable} ${poppins.variable} ${teachers.variable}`}>
       <head>
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
         <Header />
         {children}
+        <Marquee />
         <Footer />
       </body>
     </html>

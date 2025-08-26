@@ -67,7 +67,7 @@ const Best = ({ data }: BestProps) => {
         <Image src={birds} alt="birds" width={183} height={77} />
       </div>
       <div className="best-tree absolute bottom-0 min-990:bottom-[-20px] min-1600:bottom-[-70px] right-0 z-0">
-        <Image
+        <img
           src={tree}
           alt="tree"
           width={393}

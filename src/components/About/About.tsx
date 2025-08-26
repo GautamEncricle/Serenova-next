@@ -52,7 +52,7 @@ const About = ({
       {leafPosition !== "hidden" && (
         <div
           className={`about-leaf absolute right-0  ${leafPositionClass} z-0`}>
-          <Image
+          <img
             src={aboutLeaf}
             alt="leaf"
             width={573}

@@ -1406,6 +1406,28 @@
             }
         ]
     },
+    "marquee": {
+        "marquee": [
+            {
+                "label": "Serenova The Luxury Stay."
+            },
+            {
+                "label": "Serenova The Luxury Stay."
+            },
+            {
+                "label": "Serenova The Luxury Stay."
+            },
+            {
+                "label": "Serenova The Luxury Stay."
+            },
+            {
+                "label": "Serenova The Luxury Stay."
+            },
+            {
+                "label": "Serenova The Luxury Stay."
+            }
+        ]
+    },
     "footer": {
         "planeicon": {
             "src": "/assets/images/footer-plane-icon.svg",
