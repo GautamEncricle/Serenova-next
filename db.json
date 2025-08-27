@@ -7,7 +7,7 @@
             "link": "/dummy"
         },
         "menu": [
-            {
+            { 
                 "label": "Home",
                 "url": "/"
             },
