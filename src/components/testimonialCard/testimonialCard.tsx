@@ -2,9 +2,11 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 const quote = "/assets/images/test-quote.png";
 const leaf = "/assets/images/test-leaf.png";
-import { Testimonial as TestimonialType } from "../../types/homeTypes";
 
-interface TestimonialCardProps extends TestimonialType {}
+interface TestimonialCardProps {
+  text: string;
+  customer: string;
+}
 
 const TestimonialCard = ({ text, customer }: TestimonialCardProps) => {
   return (

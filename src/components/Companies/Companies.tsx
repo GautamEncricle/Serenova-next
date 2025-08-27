@@ -6,7 +6,17 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css";
 
-const Companies = ({ data }: { data: any }) => {
+interface CompanyItem {
+  link: string;
+  src: string;
+  alt: string;
+}
+
+interface CompaniesData {
+  companies: CompanyItem[];
+}
+
+const Companies = ({ data }: { data: CompaniesData }) => {
   const { companies } = data;
 
   return (
@@ -41,7 +51,7 @@ const Companies = ({ data }: { data: any }) => {
                 spaceBetween: 50,
               },
             }}>
-            {companies.map((item: any, index: any) => (
+            {companies.map((item: CompanyItem, index: number) => (
               <SwiperSlide key={index} className="companies-slide">
                 <a
                   href={item.link}

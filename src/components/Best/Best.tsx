@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 const birds = "/assets/images/best-bird.png";
 const tree = "/assets/images/best-tree.png";
 import { Best as BestType } from "../../types/homeTypes";

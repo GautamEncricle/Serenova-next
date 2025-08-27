@@ -1,4 +1,78 @@
+# Serenova Next.js Project
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Project Structure
+
+```
+serenova-next/
+├── .gitignore
+├── db.json (JSON database file)
+├── src/
+│   ├── app/
+│   │   └── (pages)/
+│   │       ├── contact/
+│   │       │   └── page.tsx
+│   │       └── about/
+│   │           └── page.tsx
+│   ├── components/
+│   │   ├── Marquee/
+│   │   │   └── Marquee.tsx
+│   │   ├── Journal/
+│   │   │   └── Journal.tsx
+│   │   └── Home/
+│   │       └── Home.tsx
+│   ├── lib/
+│   │   ├── api/
+│   │   │   └── home.ts
+│   │   └── axiosClient.ts
+│   └── types/
+│       ├── homeTypes.ts
+│       └── contactTypes.ts
+```
+
+## Key Components
+
+### JSON Server
+
+This project uses JSON Server as a mock API backend. JSON Server creates a full fake API with zero coding.
+
+**Features:**
+
+- Provides a REST API endpoint at `http://localhost:3001`
+- Uses `db.json` file as the database
+- Support only GET method for the fetch the product or data.
+
+**To start JSON Server:**
+
+```bash
+npm run json-server
+```
+
+This will start the JSON Server on port 3001, watching the `db.json` file for changes.
+
+### axiosClient
+
+Located at `src/lib/axiosClient.ts`:
+
+```typescript
+import axios from "axios";
+
+const axiosClient = axios.create({
+  baseURL: "http://localhost:3001",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+export default axiosClient;
+```
+
+**Features:**
+
+- Configured with base URL `http://localhost:3001` for API calls
+- Sets default Content-Type header to `application/json`
+- Provides a reusable axios instance for consistent API requests
 
 ## Getting Started
 

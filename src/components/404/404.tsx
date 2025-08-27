@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 // import img from "/assets/images/404-error.png";
 
 const Error = () => {
@@ -19,9 +20,9 @@ const Error = () => {
             />
           </div>
           <div className="error-btn mt-40">
-            <a href="/" className="btn btn-gold-simple mx-auto">
+            <Link href="/" className="btn btn-gold-simple mx-auto">
               Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
 import TourCard from "../tourCard/tourCard";
 const leaf = "/assets/images/tour-leaf.png";
 const tree = "/assets/images/tour-tree.png";

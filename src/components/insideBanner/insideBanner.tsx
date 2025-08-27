@@ -3,7 +3,12 @@
 import React from "react";
 import Image from "next/image";
 
-const InsideBanner = ({ bg, title }: any) => {
+interface InsideBannerProps {
+  bg: string;
+  title: string;
+}
+
+const InsideBanner = ({ bg, title }: InsideBannerProps) => {
   return (
     <section className="ibanner-main relative pt-[336px] pb-40 overflow-hidden">
       <div className="ibanner-bg absolute w-full h-full left-0 top-0">

@@ -115,15 +115,11 @@ const Banner = ({ data }: BannerProps) => {
               <div className="banner-gateway-text text-center mb-20 min-1200:mb-25 min-1400:mb-[35px] min-1600:mb-[65px]">
                 <p className="poppins-300-24">{gatewayText}</p>
               </div>
-              <a
-                href="/"
+              <button
                 className="banner-gateway-arrow block w-fit mx-auto hover:opacity-70"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToNextSection();
-                }}>
+                onClick={scrollToNextSection}>
                 <Image src={arrow} alt="arrow" width={35} height={34} />
-              </a>
+              </button>
             </div>
           </div>
         </div>

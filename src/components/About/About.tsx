@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 const aboutLeaf = "/assets/images/about-leaf.png";
 import { About as AboutType } from "../../types/homeTypes";
 

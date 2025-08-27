@@ -20,7 +20,7 @@ export interface ContactFormData {
 }
 
 export interface CountItem {
-  number: string; // Keep it as string since the data from db.json is in string format
+  number: string;
   label: string;
 }
 
