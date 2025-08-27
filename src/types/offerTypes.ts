@@ -41,3 +41,13 @@ export interface OfferExploreData {
   title: string;
   cards: OfferExploreCard[];
 }
+
+export interface OfferData {
+  aboutData: OfferAboutData;
+  filterData: OfferFilterData[];
+  packagesData: PackagesData;
+  lifestyleData: any; // Define this type as needed
+  exploreData: OfferExploreData;
+  testimonialData: any; // Define this type as needed
+  journalData: any; // Define this type as needed
+}

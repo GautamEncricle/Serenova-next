@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import FilterCard from "../filterCard/filterCard";
 import { FilterData } from "@/types/accommodationTypes";

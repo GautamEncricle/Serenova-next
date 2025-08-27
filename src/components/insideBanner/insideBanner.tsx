@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
 const InsideBanner = ({ bg, title }: any) => {
   return (
-    <section className="ibanner-main relative pt-[336px] pb-40">
+    <section className="ibanner-main relative pt-[336px] pb-40 overflow-hidden">
       <div className="ibanner-bg absolute w-full h-full left-0 top-0">
         <div className="ibanner-inside relative h-full after:content-[''] after:absolute after:w-full after:h-full after:left-0 after:top-0 after:bg-[rgba(0,_0,_0,_0.25)]">
           <Image

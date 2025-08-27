@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import JournalCard from "../journalCard/journalCard";
 
@@ -46,7 +48,7 @@ const Journal = ({
             <div className="title text-center">
               <h2 className="h4">{title}</h2>
             </div>
-            <div className="journal-list grid grid-cols-1 min-576:grid-cols-2 min-990:grid-cols-3 min-1200:grid-cols-4 gap-x-32 gap-y-32 mt-40 min-1400:mt-[51px]">
+            <div className="journal-list grid grid-cols-1 min-576:grid-cols-2 min-990:grid-cols-3 min-1200:grid-cols-4 gap-x-32 gap-y-32 mt-40 min-1400:mt-[51px] justify-items-center">
               {journals.map((journal: any) => (
                 <JournalCard key={journal.id} {...journal} />
               ))}

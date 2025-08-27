@@ -1,6 +1,24 @@
 import React from 'react';
 
-const TourCard = ({ link, img, title, subtitle, points = [] }) => {
+interface PointItem {
+  label: string;
+  value: string;
+}
+
+interface ImageData {
+  src: string;
+  alt: string;
+}
+
+interface TourCardProps {
+  link: string;
+  img: ImageData;
+  title: string;
+  subtitle: string;
+  points?: PointItem[];
+}
+
+const TourCard = ({ link, img, title, subtitle, points = [] }: TourCardProps) => {
   return (
     <div className="tour-card-main">
       <a href={link} className="tour-card-section block hover:scale-[1.01]">

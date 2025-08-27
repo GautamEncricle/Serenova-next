@@ -1,17 +1,31 @@
+"use client";
+
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Thumbs } from "swiper/modules";
+import type { Swiper as SwiperType } from 'swiper';
 
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-const Indulge = ({ data }) => {
+interface ImageData {
+  src: string;
+  alt: string;
+}
+
+interface IndulgeData {
+  subtitle: string;
+  title: string;
+  images: ImageData[];
+}
+
+const Indulge = ({ data } : {data: IndulgeData}) => {
 
     const { subtitle, title, images } = data;
 
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    const mainSwiperRef = useRef(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+    const mainSwiperRef = useRef<SwiperType | null>(null);
 
     const goNext = () => {
         if (mainSwiperRef.current) mainSwiperRef.current.slideNext();
@@ -23,17 +37,17 @@ const Indulge = ({ data }) => {
 
     return (
         <section className="indulge-main py-60 min-1400:py-[147px] overflow-hidden">
-            <div class="container-1608">
-                <div class="indulge-section">
-                    <div class="indulge-start">
-                        <div class="sub-title sub-title-no-translate mb-16">
+            <div className="container-1608">
+                <div className="indulge-section">
+                    <div className="indulge-start">
+                        <div className="sub-title sub-title-no-translate mb-16">
                             <span className='after:!left-[84px]'>{subtitle}</span>
                         </div>
-                        <div class="title mb-[43px]">
+                        <div className="title mb-[43px]">
                             <h2 className='h4'>{title}</h2>
                         </div>
-                        <div class="swipers-main-start min-990:flex min-990:gap-x-40 min-1600:gap-x-98 max-w-full w-full mx-auto relative">
-                            <div class="swiper-left min-990:flex-[0_0_calc(100%_-_167px)] min-990:w-[calc(100%_-_167px)] min-1600:flex-[0_0_calc(100%_-_225px)] min-1600:w-[calc(100%_-_225px)]">
+                        <div className="swipers-main-start min-990:flex min-990:gap-x-40 min-1600:gap-x-98 max-w-full w-full mx-auto relative">
+                            <div className="swiper-left min-990:flex-[0_0_calc(100%_-_167px)] min-990:w-[calc(100%_-_167px)] min-1600:flex-[0_0_calc(100%_-_225px)] min-1600:w-[calc(100%_-_225px)]">
                                 <Swiper
                                     loop={true}
                                     onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
@@ -56,7 +70,7 @@ const Indulge = ({ data }) => {
                                     ))}
                                 </Swiper>
                             </div>
-                            <div class="swiper-right min-990:flex-[0_0_127px] min-990:w-[127px] min-990:h-[420px] min-1200:h-[540px] min-1400:h-[675px] min-990:absolute min-990:right-0 min-990:top-0 z-1 max-990:mt-30">
+                            <div className="swiper-right min-990:flex-[0_0_127px] min-990:w-[127px] min-990:h-[420px] min-1200:h-[540px] min-1400:h-[675px] min-990:absolute min-990:right-0 min-990:top-0 z-1 max-990:mt-30">
                                 <Swiper
                                     onSwiper={setThumbsSwiper}
                                     loop={true}

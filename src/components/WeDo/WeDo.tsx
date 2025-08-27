@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { WeDoData } from "@/types/aboutTypes";
@@ -21,7 +23,7 @@ const WeDo = ({ data }: { data: WeDoData }) => {
       <div className="container-1335">
         <div className="do-section relative z-1">
           <div className="do-start">
-            <div className="do-above flex flex-col min-768:flex-row gap-y-30 gap-x-40 min-1400:gap-[93px]">
+<div className="do-above flex flex-col min-768:flex-row gap-y-30 gap-x-40 min-1400:gap-[93px] items-center">
               <div className="do-above-left min-768:flex-[0_0_350px] min-1400:flex-[0_0_470px]">
                 <div className="do-above-left-inside relative">
                   <Image

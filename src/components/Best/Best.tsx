@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 const birds = "/assets/images/best-bird.png";

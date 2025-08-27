@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 const leaf = "/assets/images/explore-leaf.png";
 import ExploreCard from "../exploreCard/Explore";

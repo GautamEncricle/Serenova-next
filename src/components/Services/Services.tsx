@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ServiceCard from "../serviceCard/serviceCard";
 import { Services as ServicesType } from "../../types/homeTypes";

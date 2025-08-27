@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import PackageCard from "../packageCard/packageCard";
 import { PackagesData } from "@/types/offerTypes";

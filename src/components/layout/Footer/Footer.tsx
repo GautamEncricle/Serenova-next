@@ -1,34 +1,22 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
-import axiosClient from "@/lib/axiosClient";
+import { fetchFooterData } from "@/lib/api/footer";
 import { FooterData } from "@/types/footerTypes";
 
 const leftLeaf = "/assets/images/footer-leaf-left.png";
 const rightLeaf = "/assets/images/footer-leaf-right.png";
 
-const Footer = () => {
-  const [footerData, setFooterData] = useState<FooterData | null>(null);
-  const [loading, setLoading] = useState(true);
+const Footer = async () => {
+  let footerData: FooterData | null = null;
 
-  useEffect(() => {
-    const fetchFooterData = async () => {
-      try {
-        setLoading(true);
-        const footerRes = await axiosClient.get("/footer");
-        setFooterData(footerRes.data);
-      } catch (error) {
-        console.error("Error fetching footer data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  try {
+    footerData = await fetchFooterData();
+  } catch (error) {
+    console.error("Error fetching footer data:", error);
+    return <div>Error loading footer data</div>;
+  }
 
-    fetchFooterData();
-  }, []);
-
-  if (loading) return <div>Loading...</div>;
-  if (!footerData) return <div>Error loading footer data</div>;
+  if (!footerData) {
+    return <div>No footer data found</div>;
+  }
 
   const {
     planeicon,
@@ -111,19 +99,16 @@ const Footer = () => {
                 </button>
               </div>
               <div className="footer-form-agreement flex items-center justify-center mt-20 min-1200:mt-32">
-                <input
-                  type="checkbox"
-                  name="agree"
-                  id="agree"
-                  className="invisible w-0 h-0"
-                />
+                <input type="checkbox" name="agree" id="agree" className="invisible w-0 h-0" />
                 <label
                   htmlFor="agree"
-                  className="text-14 leading-[157.143%] text-secondary-900">
+                  className="text-14 leading-[157.143%] text-secondary-900"
+                >
                   {formAgreeText}{" "}
                   <a
                     href={formAgreeLink.link}
-                    className="leading-100p underline hover:text-black">
+                    className="leading-100p underline hover:text-black"
+                  >
                     {formAgreeLink.text}
                   </a>
                 </label>
@@ -147,7 +132,8 @@ const Footer = () => {
                     <li key={index} className="leading-150p">
                       <a
                         href={item.url}
-                        className="leading-150p text-black hover:text-secondary-800">
+                        className="leading-150p text-black hover:text-secondary-800"
+                      >
                         {item.label}
                       </a>
                     </li>
@@ -159,12 +145,7 @@ const Footer = () => {
                   {social.map((item, index) => (
                     <li key={index}>
                       <a href={item.url}>
-                        <img
-                          src={item.platform}
-                          alt="icon"
-                          width="auto"
-                          height="auto"
-                        />
+                        <img src={item.platform} alt="icon" width="auto" height="auto" />
                       </a>
                     </li>
                   ))}

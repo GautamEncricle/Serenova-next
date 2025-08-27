@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 const leaf = "/assets/images/offer-leaf.png";
 const bench = "/assets/images/offer-bench.png";

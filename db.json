@@ -209,22 +209,22 @@
                 "link": "/",
                 "img": {
                     "src": "/assets/images/tour-2.webp",
-                    "alt": "Scenic Sunset Cruise"
+                    "alt": "Hillside Hike & Ocean Vistas"
                 },
-                "title": "Scenic Sunset Cruise",
-                "subtitle": "Romantic Tour",
+                "title": "Hillside Hike & Ocean Vistas",
+                "subtitle": "Nature Walk",
                 "points": [
                     {
                         "label": "Duration",
-                        "value": "2 Hours"
+                        "value": "3–5 Hours"
                     },
                     {
                         "label": "Includes",
-                        "value": "Champagne & Canapés"
+                        "value": "Trail snacks, water, guide"
                     },
                     {
                         "label": "Guide",
-                        "value": "Experienced skipper"
+                        "value": "Certified eco-hiking expert"
                     }
                 ]
             },
@@ -233,22 +233,94 @@
                 "link": "/",
                 "img": {
                     "src": "/assets/images/tour-3.webp",
-                    "alt": "Forest Hike & Bird Watching"
+                    "alt": "Sacred Temples & Local Traditions"
                 },
-                "title": "Forest Hike & Bird Watching",
-                "subtitle": "Nature Tour",
+                "title": "Sacred Temples & Local Traditions",
+                "subtitle": "Cultural Experience",
                 "points": [
                     {
                         "label": "Duration",
-                        "value": "Full Day"
+                        "value": "Full Day (6–7 hrs)"
                     },
                     {
                         "label": "Includes",
-                        "value": "Picnic lunch"
+                        "value": "Entry passes, lunch, guide"
                     },
                     {
                         "label": "Guide",
-                        "value": "Wildlife expert"
+                        "value": "Local historian & storyteller"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/tour-4.webp",
+                    "alt": "Dolphin Cruise & Marine Discovery"
+                },
+                "title": "Dolphin Cruise & Marine Discovery",
+                "subtitle": "Ocean Safari",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "2.5 Hours"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Boat ride, binoculars, snacks"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Marine life specialist"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/tour-5.webp",
+                    "alt": "Coastal Flavors Culinary Tour"
+                },
+                "title": "Coastal Flavors Culinary Tour",
+                "subtitle": "Food & Culture",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "Half Day (4 hrs)"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Cooking class, tasting menu"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "In-house chef & local farmer"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "link": "/",
+                "img": {
+                    "src": "/assets/images/tour-6.webp",
+                    "alt": "Sunset Sailing Experience"
+                },
+                "title": "Sunset Sailing Experience",
+                "subtitle": "Romantic Escape",
+                "points": [
+                    {
+                        "label": "Duration",
+                        "value": "2 Hours"
+                    },
+                    {
+                        "label": "Includes",
+                        "value": "Small bites, captain"
+                    },
+                    {
+                        "label": "Guide",
+                        "value": "Private skipper"
                     }
                 ]
             }

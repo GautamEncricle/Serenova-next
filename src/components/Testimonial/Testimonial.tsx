@@ -1,5 +1,6 @@
+"use client";
+
 import React, { useRef, useState } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Swiper as SwiperType } from "swiper";
@@ -59,7 +60,7 @@ const Testimonial = ({ data, leafDisplay }: TestimonialProps) => {
         <div className="title text-center">
           <h2 className="h4">{title}</h2>
         </div>
-        <div className="test-swiper-start mt-40 min-1400:mt-[67px]">
+            <div className="test-swiper-start mt-40 min-1400:mt-[67px] overflow-hidden">
           <Swiper
             modules={[Navigation]}
             spaceBetween={20}
